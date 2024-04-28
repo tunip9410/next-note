@@ -8,7 +8,7 @@ async function App() {
             <h1>Next movies</h1>
             {movie.map((e :any, i :number) => (
                 <p>
-                    <Link href={`/movies/${movie[i].id}`} key={i}>{e.title}</Link>
+                    <Link prefetch={true} href={`/movies/${movie[i].id}`} key={i}>{e.title}</Link>
                 </p>
             ))}
         </div>
